@@ -1,0 +1,11 @@
+sunspot-solr.pid
+*.swp
+coverage
+pkg
+/doc
+.DS_Store
+
+.yardoc
+README.rdoc
+.bundle
+Gemfile.lock
