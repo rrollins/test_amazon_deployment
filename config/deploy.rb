@@ -26,3 +26,23 @@ set :rvm_type, :user
 
 
 set :bundle_cmd, "LANG='en_US.UTF-8' LC_ALL='en_US.UTF-8' bundle"
+
+
+
+namespace :deploy do
+  task :start, roles => :app do
+    run "cd #{current_path} && script/rails s -d"
+  end
+
+
+  task :stop, roles => :app do
+    run "kill -9 $(cat #{current_path}/tmp/pids/server.pid)"
+  end
+
+  task :restart, roles => :app do
+    stop
+    start
+  end
+
+end
+

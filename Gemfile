@@ -44,3 +44,5 @@ gem 'ruby-debug19'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 
+
+gem 'resque', :require => "resque/server"

@@ -3,12 +3,9 @@ class Product < ActiveRecord::Base
 
   attr_accessor :name, :brand, :price, :redis_id
 
-  after_save :index_and_commit
-
 
   def index_and_commit
-    self.index
-    Sunspot.commit
+    Resque.enqueue(SolrIndexr, self.class.name, self.id)
   end
 
   searchable do
@@ -82,6 +79,7 @@ class Product < ActiveRecord::Base
 #debugger
     self.redis_id = $redis.incr("object:product:count")
     $redis.hset("object.product", self.class.redis_key(self.redis_id), self.to_json(:methods => [:redis_id, :name, :brand, :price]))
+    index_and_commit
   end
 
   def self.all
@@ -92,7 +90,6 @@ class Product < ActiveRecord::Base
       ps.push Product.new(ActiveSupport::JSON.decode(v))
     end
     ps
-
   end
 
   def self.find(i)
