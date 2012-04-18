@@ -46,3 +46,9 @@ gem 'sunspot_solr'
 
 
 gem 'resque', :require => "resque/server"
+
+gem 'aws-s3'
+gem 'amazon-ec2', '0.9.17', :require => "AWS", :git => "git://github.com/rrollins/amazon-ec2.git"
+
+gem 'capistrano-clouddeploy', :git => "git://github.com/synctree/capistrano-clouddeploy"
+
