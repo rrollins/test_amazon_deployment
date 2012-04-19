@@ -37,6 +37,7 @@ gem 'rvm-capistrano' #, :require => 'rvm/capisrano'
 
 # To use debugger
 #
+gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'redis'
 
 gem 'sunspot_rails'
@@ -55,7 +56,6 @@ gem 'capistrano-clouddeploy', :require => "capistrano-clouddeploy", :git => "git
 
 group :development do
   gem 'thin', '1.2.11'
-  gem 'ruby-debug19', :require => 'ruby-debug'
 end
 
 group :production do
