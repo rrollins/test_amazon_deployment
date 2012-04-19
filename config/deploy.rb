@@ -2,7 +2,6 @@ require "bundler/capistrano"
 require "rvm/capistrano"
 
 
-
 server "localhost", :app, :web, :db, :primary => true
 
 set :application, 'camera'
@@ -11,9 +10,10 @@ set :application, 'camera'
 #ssh_options[:forward_agent] = true
 ssh_options[:auth_methods] = %w(publickey)
 set :scm_verbose, true
-#default_run_options[:pty] = false
+default_run_options[:pty] = true
 #set :user, "deploy"
-set :shell, "false"
+set :user, "royce"
+set :shell, true
 set :use_sudo, false
 
 set :repository, 'git@github.com:rrollins/test_amazon_deployment.git'

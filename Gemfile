@@ -33,13 +33,12 @@ gem 'jquery-rails', '2.0.2'
 
 # Deploy with Capistrano
 gem 'capistrano'
-gem 'rvm-capistrano'
+gem 'rvm-capistrano' #, :require => 'rvm/capisrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+ gem 'ruby-debug19', :require => 'ruby-debug'
 #
 gem 'redis'
-gem 'ruby-debug19' 
 
 gem 'sunspot_rails'
 gem 'sunspot_solr'
@@ -47,8 +46,9 @@ gem 'sunspot_solr'
 
 gem 'resque', :require => "resque/server"
 
-gem 'aws-s3'
+
+gem 'aws-s3', :require => 'aws/s3'
 gem 'amazon-ec2', '0.9.17', :require => "AWS", :git => "git://github.com/rrollins/amazon-ec2.git"
 
-gem 'capistrano-clouddeploy', :git => "git://github.com/synctree/capistrano-clouddeploy"
+gem 'capistrano-clouddeploy', :require => "capistrano-clouddeploy", :git => "git://github.com/synctree/capistrano-clouddeploy"
 
