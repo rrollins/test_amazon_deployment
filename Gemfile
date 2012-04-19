@@ -36,7 +36,6 @@ gem 'capistrano'
 gem 'rvm-capistrano' #, :require => 'rvm/capisrano'
 
 # To use debugger
- gem 'ruby-debug19', :require => 'ruby-debug'
 #
 gem 'redis'
 
@@ -52,3 +51,13 @@ gem 'amazon-ec2', '0.9.17', :require => "AWS", :git => "git://github.com/rrollin
 
 gem 'capistrano-clouddeploy', :require => "capistrano-clouddeploy", :git => "git://github.com/synctree/capistrano-clouddeploy"
 
+
+
+group :development do
+  gem 'thin', '1.2.11'
+  gem 'ruby-debug19', :require => 'ruby-debug'
+end
+
+group :production do
+  gem 'unicorn', '3.7.0'
+end
