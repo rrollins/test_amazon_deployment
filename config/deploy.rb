@@ -1,10 +1,13 @@
 require "bundler/capistrano" 
 require "rvm/capistrano"
-
-
-server "localhost", :app, :web, :db, :primary => true
+require 'capistrano/ext/multistage'
 
 set :application, 'camera'
+
+set :default_stage, "develop"
+
+
+
 
 #
 #ssh_options[:forward_agent] = true
@@ -30,11 +33,19 @@ set :bundle_cmd, "LANG='en_US.UTF-8' LC_ALL='en_US.UTF-8' bundle"
 #set :deploy_to, "/home/deploy/www/#{application}"
 #set :deploy_to, "/home/deploy/www/#{application}"
 
+namespace :resque do
+  task :start, roles => :app do
+     run "cd #{current_path} && bundle exec rake resque:work QUEUE='*'"
+  end
+end
 
 
 namespace :deploy do
   task :start, roles => :app do
-    run "cd #{current_path} && script/rails s -d"
+    #run "cd #{current_path} && script/rails s -d -e production"
+    #run "cd #{current_path} && bundle exec unicorn_rails -c #{unicorn_config} -E #{production} -D"
+    run "cd #{current_path} && bundle exec unicorn_rails -E production -D"
+
   end
 
 
