@@ -135,7 +135,7 @@ checked program was:
 "gcc -o conftest -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1/x86_64-darwin10.5.0 -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1/ruby/backward -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wshorten-64-to-32 -Wno-long-long  -fno-common -pipe conftest.c  -L. -L/Users/royce/.rvm/rubies/ruby-1.9.2-p180/lib -L. -L/usr/local/lib    -lsqlite3  -lruby.1.9.1-static -lsqlite3  -lpthread -ldl -lobjc "
 Undefined symbols:
   "_sqlite3_column_database_name", referenced from:
-      _t in ccndtQ8j.o
+      _t in ccCRx4iD.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 checked program was:
@@ -168,7 +168,7 @@ checked program was:
 "gcc -o conftest -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1/x86_64-darwin10.5.0 -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1/ruby/backward -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wshorten-64-to-32 -Wno-long-long  -fno-common -pipe conftest.c  -L. -L/Users/royce/.rvm/rubies/ruby-1.9.2-p180/lib -L. -L/usr/local/lib    -lsqlite3  -lruby.1.9.1-static -lsqlite3  -lpthread -ldl -lobjc "
 Undefined symbols:
   "_sqlite3_enable_load_extension", referenced from:
-      _t in ccfh8QvD.o
+      _t in cc9CEIxe.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 checked program was:
@@ -201,7 +201,7 @@ checked program was:
 "gcc -o conftest -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1/x86_64-darwin10.5.0 -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1/ruby/backward -I/Users/royce/.rvm/rubies/ruby-1.9.2-p180/include/ruby-1.9.1 -I. -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE    -O3 -ggdb -Wextra -Wno-unused-parameter -Wno-parentheses -Wpointer-arith -Wwrite-strings -Wno-missing-field-initializers -Wshorten-64-to-32 -Wno-long-long  -fno-common -pipe conftest.c  -L. -L/Users/royce/.rvm/rubies/ruby-1.9.2-p180/lib -L. -L/usr/local/lib    -lsqlite3  -lruby.1.9.1-static -lsqlite3  -lpthread -ldl -lobjc "
 Undefined symbols:
   "_sqlite3_load_extension", referenced from:
-      _t in ccjPNRwM.o
+      _t in ccQZ4LMx.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 checked program was:

@@ -49,7 +49,7 @@ have_func: checking for iconv_open() in iconv.h... -------------------- no
 ld: warning: directory '/usr/local/Cellar/libxml2/2.7.8/lib' following -L not found
 Undefined symbols:
   "_libiconv_open", referenced from:
-      _t in ccMrKMtB.o
+      _t in ccaZWjn4.o
 ld: symbol(s) not found
 collect2: ld returned 1 exit status
 checked program was:
