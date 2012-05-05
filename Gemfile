@@ -62,3 +62,10 @@ end
 group :production do
   gem 'unicorn', '3.7.0'
 end
+
+group :development, :test do
+  gem 'ruby-debug19'
+  gem 'rspec-rails'
+  gem 'rspec'
+end
+
