@@ -1,23 +1,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{pr_geohash}
+  s.name = "pr_geohash"
   s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Yuichiro MASUI"]
-  s.date = %q{2009-11-03}
-  s.description = %q{GeoHash encode/decode library for pure Ruby.
-
-It's implementation of http://en.wikipedia.org/wiki/Geohash}
+  s.date = "2009-11-03"
+  s.description = "GeoHash encode/decode library for pure Ruby.\n\nIt's implementation of http://en.wikipedia.org/wiki/Geohash"
   s.email = ["masui@masuidrive.jp"]
-  s.files = ["test/test_pr_geohash.rb"]
-  s.homepage = %q{http://github.com/masuidrive/pr_geohash}
+  s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.rdoc"]
+  s.files = ["History.txt", "Manifest.txt", "README.rdoc"]
+  s.homepage = "http://github.com/masuidrive/pr_geohash"
+  s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{seattlerb}
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{GeoHash encode/decode library for pure Ruby}
-  s.test_files = ["test/test_pr_geohash.rb"]
+  s.rubyforge_project = "seattlerb"
+  s.rubygems_version = "1.8.24"
+  s.summary = "GeoHash encode/decode library for pure Ruby"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

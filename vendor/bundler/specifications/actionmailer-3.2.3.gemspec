@@ -1,20 +1,20 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{actionmailer}
+  s.name = "actionmailer"
   s.version = "3.2.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Heinemeier Hansson"]
-  s.date = %q{2012-03-29}
-  s.description = %q{Email on Rails. Compose, deliver, receive, and test emails using the familiar controller/view pattern. First-class support for multipart email and attachments.}
-  s.email = %q{david@loudthinking.com}
-  s.homepage = %q{http://www.rubyonrails.org}
+  s.date = "2012-03-29"
+  s.description = "Email on Rails. Compose, deliver, receive, and test emails using the familiar controller/view pattern. First-class support for multipart email and attachments."
+  s.email = "david@loudthinking.com"
+  s.homepage = "http://www.rubyonrails.org"
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.8.7")
   s.requirements = ["none"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Email composition, delivery, and receiving framework (part of Rails).}
+  s.rubygems_version = "1.8.24"
+  s.summary = "Email composition, delivery, and receiving framework (part of Rails)."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

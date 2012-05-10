@@ -1,21 +1,18 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{redis-namespace}
+  s.name = "redis-namespace"
   s.version = "1.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chris Wanstrath"]
-  s.date = %q{2011-05-17}
-  s.description = %q{Adds a Redis::Namespace class which can be used to namespace calls
-to Redis. This is useful when using a single instance of Redis with
-multiple, different applications.
-}
-  s.email = %q{chris@ozmm.org}
-  s.homepage = %q{http://github.com/defunkt/redis-namespace}
+  s.date = "2011-05-17"
+  s.description = "Adds a Redis::Namespace class which can be used to namespace calls\nto Redis. This is useful when using a single instance of Redis with\nmultiple, different applications.\n"
+  s.email = "chris@ozmm.org"
+  s.homepage = "http://github.com/defunkt/redis-namespace"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Namespaces Redis commands.}
+  s.rubygems_version = "1.8.24"
+  s.summary = "Namespaces Redis commands."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

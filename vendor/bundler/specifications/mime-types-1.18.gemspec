@@ -1,30 +1,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{mime-types}
+  s.name = "mime-types"
   s.version = "1.18"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Austin Ziegler"]
-  s.date = %q{2012-03-21 00:00:00.000000000Z}
-  s.description = %q{This library allows for the identification of a file's likely MIME content
-type. This is release 1.17.2. The identification of MIME content type is based
-on a file's filename extensions.
-
-MIME::Types for Ruby originally based on and synchronized with MIME::Types for
-Perl by Mark Overmeer, copyright 2001 - 2009. As of version 1.15, the data
-format for the MIME::Type list has changed and the synchronization will no
-longer happen.
-
-:include: Licence.rdoc}
+  s.date = "2012-03-21"
+  s.description = "This library allows for the identification of a file's likely MIME content\ntype. This is release 1.17.2. The identification of MIME content type is based\non a file's filename extensions.\n\nMIME::Types for Ruby originally based on and synchronized with MIME::Types for\nPerl by Mark Overmeer, copyright 2001 - 2009. As of version 1.15, the data\nformat for the MIME::Type list has changed and the synchronization will no\nlonger happen.\n\n:include: Licence.rdoc"
   s.email = ["austin@rubyforge.org"]
-  s.files = ["test/test_mime_type.rb", "test/test_mime_types.rb"]
-  s.homepage = %q{http://mime-types.rubyforge.org/}
+  s.extra_rdoc_files = ["History.rdoc", "Licence.rdoc", "Manifest.txt", "README.rdoc", "type-lists/application.txt", "type-lists/audio.txt", "type-lists/image.txt", "type-lists/message.txt", "type-lists/model.txt", "type-lists/multipart.txt", "type-lists/text.txt", "type-lists/video.txt"]
+  s.files = ["History.rdoc", "Licence.rdoc", "Manifest.txt", "README.rdoc", "type-lists/application.txt", "type-lists/audio.txt", "type-lists/image.txt", "type-lists/message.txt", "type-lists/model.txt", "type-lists/multipart.txt", "type-lists/text.txt", "type-lists/video.txt"]
+  s.homepage = "http://mime-types.rubyforge.org/"
+  s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{mime-types}
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{This library allows for the identification of a file's likely MIME content type}
-  s.test_files = ["test/test_mime_type.rb", "test/test_mime_types.rb"]
+  s.rubyforge_project = "mime-types"
+  s.rubygems_version = "1.8.24"
+  s.summary = "This library allows for the identification of a file's likely MIME content type"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

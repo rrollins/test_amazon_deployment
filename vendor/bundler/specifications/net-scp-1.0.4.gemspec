@@ -1,21 +1,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{net-scp}
+  s.name = "net-scp"
   s.version = "1.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jamis Buck", "Delano Mandelbaum"]
-  s.date = %q{2010-08-16}
-  s.description = %q{A pure Ruby implementation of the SCP client protocol}
-  s.email = %q{net-scp@solutious.com}
-  s.files = ["test/test_all.rb"]
-  s.homepage = %q{http://net-ssh.rubyforge.org/scp}
+  s.date = "2010-08-16"
+  s.description = "A pure Ruby implementation of the SCP client protocol"
+  s.email = "net-scp@solutious.com"
+  s.extra_rdoc_files = ["CHANGELOG.rdoc", "lib/net/scp/download.rb", "lib/net/scp/errors.rb", "lib/net/scp/upload.rb", "lib/net/scp/version.rb", "lib/net/scp.rb", "lib/uri/open-scp.rb", "lib/uri/scp.rb", "README.rdoc"]
+  s.files = ["CHANGELOG.rdoc", "lib/net/scp/download.rb", "lib/net/scp/errors.rb", "lib/net/scp/upload.rb", "lib/net/scp/version.rb", "lib/net/scp.rb", "lib/uri/open-scp.rb", "lib/uri/scp.rb", "README.rdoc"]
+  s.homepage = "http://net-ssh.rubyforge.org/scp"
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Net-scp", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{net-ssh}
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{A pure Ruby implementation of the SCP client protocol}
-  s.test_files = ["test/test_all.rb"]
+  s.rubyforge_project = "net-ssh"
+  s.rubygems_version = "1.8.24"
+  s.summary = "A pure Ruby implementation of the SCP client protocol"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

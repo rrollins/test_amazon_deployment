@@ -1,27 +1,24 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{sqlite3}
+  s.name = "sqlite3"
   s.version = "1.3.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.5") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jamis Buck", "Luis Lavena", "Aaron Patterson"]
-  s.date = %q{2012-04-16}
-  s.description = %q{This module allows Ruby programs to interface with the SQLite3
-database engine (http://www.sqlite.org).  You must have the
-SQLite engine installed in order to build this module.
-
-Note that this module is only compatible with SQLite 3.6.16 or newer.}
+  s.date = "2012-04-16"
+  s.description = "This module allows Ruby programs to interface with the SQLite3\ndatabase engine (http://www.sqlite.org).  You must have the\nSQLite engine installed in order to build this module.\n\nNote that this module is only compatible with SQLite 3.6.16 or newer."
   s.email = ["jamis@37signals.com", "luislavena@gmail.com", "aaron@tenderlovemaking.com"]
   s.extensions = ["ext/sqlite3/extconf.rb"]
-  s.files = ["test/test_backup.rb", "test/test_collation.rb", "test/test_database.rb", "test/test_database_readonly.rb", "test/test_deprecated.rb", "test/test_encoding.rb", "test/test_integration.rb", "test/test_integration_open_close.rb", "test/test_integration_pending.rb", "test/test_integration_resultset.rb", "test/test_integration_statement.rb", "test/test_result_set.rb", "test/test_sqlite3.rb", "test/test_statement.rb", "test/test_statement_execute.rb", "ext/sqlite3/extconf.rb"]
-  s.homepage = %q{http://github.com/luislavena/sqlite3-ruby}
+  s.extra_rdoc_files = ["API_CHANGES.rdoc", "CHANGELOG.rdoc", "Manifest.txt", "README.rdoc", "ext/sqlite3/backup.c", "ext/sqlite3/database.c", "ext/sqlite3/exception.c", "ext/sqlite3/sqlite3.c", "ext/sqlite3/statement.c"]
+  s.files = ["API_CHANGES.rdoc", "CHANGELOG.rdoc", "Manifest.txt", "README.rdoc", "ext/sqlite3/backup.c", "ext/sqlite3/database.c", "ext/sqlite3/exception.c", "ext/sqlite3/sqlite3.c", "ext/sqlite3/statement.c", "ext/sqlite3/extconf.rb"]
+  s.homepage = "http://github.com/luislavena/sqlite3-ruby"
+  s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.required_ruby_version = Gem::Requirement.new(">= 1.8.7")
-  s.rubyforge_project = %q{sqlite3}
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{This module allows Ruby programs to interface with the SQLite3 database engine (http://www.sqlite.org)}
-  s.test_files = ["test/test_backup.rb", "test/test_collation.rb", "test/test_database.rb", "test/test_database_readonly.rb", "test/test_deprecated.rb", "test/test_encoding.rb", "test/test_integration.rb", "test/test_integration_open_close.rb", "test/test_integration_pending.rb", "test/test_integration_resultset.rb", "test/test_integration_statement.rb", "test/test_result_set.rb", "test/test_sqlite3.rb", "test/test_statement.rb", "test/test_statement_execute.rb"]
+  s.rubyforge_project = "sqlite3"
+  s.rubygems_version = "1.8.24"
+  s.summary = "This module allows Ruby programs to interface with the SQLite3 database engine (http://www.sqlite.org)"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

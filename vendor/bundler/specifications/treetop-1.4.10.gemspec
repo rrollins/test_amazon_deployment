@@ -1,22 +1,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{treetop}
+  s.name = "treetop"
   s.version = "1.4.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Nathan Sobo"]
-  s.autorequire = %q{treetop}
-  s.date = %q{2011-07-27}
-  s.default_executable = %q{tt}
-  s.email = %q{cliffordheath@gmail.com}
+  s.autorequire = "treetop"
+  s.date = "2011-07-27"
+  s.email = "cliffordheath@gmail.com"
   s.executables = ["tt"]
-  s.files = ["bin/tt"]
-  s.homepage = %q{http://functionalform.blogspot.com}
+  s.extra_rdoc_files = ["LICENSE", "README.md"]
+  s.files = ["bin/tt", "LICENSE", "README.md"]
+  s.homepage = "http://functionalform.blogspot.com"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{A Ruby-based text parsing and interpretation DSL}
+  s.rubygems_version = "1.8.24"
+  s.summary = "A Ruby-based text parsing and interpretation DSL"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

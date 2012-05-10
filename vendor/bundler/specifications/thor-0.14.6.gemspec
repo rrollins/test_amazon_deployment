@@ -1,20 +1,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{thor}
+  s.name = "thor"
   s.version = "0.14.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.6") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Yehuda Katz", "José Valim"]
-  s.date = %q{2010-11-19}
-  s.description = %q{A scripting framework that replaces rake, sake and rubigen}
+  s.authors = ["Yehuda Katz", "Jos\u{c3}\u{a9} Valim"]
+  s.date = "2010-11-19"
+  s.description = "A scripting framework that replaces rake, sake and rubigen"
   s.email = ["ruby-thor@googlegroups.com"]
   s.executables = ["rake2thor", "thor"]
-  s.files = ["bin/rake2thor", "bin/thor"]
-  s.homepage = %q{http://github.com/wycats/thor}
+  s.extra_rdoc_files = ["CHANGELOG.rdoc", "LICENSE", "README.md", "Thorfile"]
+  s.files = ["bin/rake2thor", "bin/thor", "CHANGELOG.rdoc", "LICENSE", "README.md", "Thorfile"]
+  s.homepage = "http://github.com/wycats/thor"
+  s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{A scripting framework that replaces rake, sake and rubigen}
+  s.rubygems_version = "1.8.24"
+  s.summary = "A scripting framework that replaces rake, sake and rubigen"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

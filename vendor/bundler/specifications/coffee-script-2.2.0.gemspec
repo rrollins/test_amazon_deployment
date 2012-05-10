@@ -1,19 +1,18 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{coffee-script}
+  s.name = "coffee-script"
   s.version = "2.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jeremy Ashkenas", "Joshua Peek", "Sam Stephenson"]
-  s.date = %q{2010-03-10}
-  s.description = %q{    Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler.
-}
-  s.email = %q{josh@joshpeek.com}
-  s.homepage = %q{http://github.com/josh/ruby-coffee-script}
+  s.date = "2010-03-10"
+  s.description = "    Ruby CoffeeScript is a bridge to the JS CoffeeScript compiler.\n"
+  s.email = "josh@joshpeek.com"
+  s.homepage = "http://github.com/josh/ruby-coffee-script"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Ruby CoffeeScript Compiler}
+  s.rubygems_version = "1.8.24"
+  s.summary = "Ruby CoffeeScript Compiler"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

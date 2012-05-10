@@ -1,21 +1,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{journey}
+  s.name = "journey"
   s.version = "1.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Aaron Patterson"]
-  s.date = %q{2012-02-22}
-  s.description = %q{Journey is a router.  It routes requests.}
+  s.date = "2012-02-22"
+  s.description = "Journey is a router.  It routes requests."
   s.email = ["aaron@tenderlovemaking.com"]
-  s.files = ["test/gtg/test_builder.rb", "test/gtg/test_transition_table.rb", "test/nfa/test_simulator.rb", "test/nfa/test_transition_table.rb", "test/nodes/test_symbol.rb", "test/path/test_pattern.rb", "test/route/definition/test_parser.rb", "test/route/definition/test_scanner.rb", "test/router/test_strexp.rb", "test/router/test_utils.rb", "test/test_route.rb", "test/test_router.rb", "test/test_routes.rb"]
-  s.homepage = %q{http://github.com/rails/journey}
+  s.extra_rdoc_files = ["Manifest.txt", "CHANGELOG.rdoc", "README.rdoc"]
+  s.files = ["Manifest.txt", "CHANGELOG.rdoc", "README.rdoc"]
+  s.homepage = "http://github.com/rails/journey"
+  s.rdoc_options = ["--main", "README.rdoc"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{journey}
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Journey is a router}
-  s.test_files = ["test/gtg/test_builder.rb", "test/gtg/test_transition_table.rb", "test/nfa/test_simulator.rb", "test/nfa/test_transition_table.rb", "test/nodes/test_symbol.rb", "test/path/test_pattern.rb", "test/route/definition/test_parser.rb", "test/route/definition/test_scanner.rb", "test/router/test_strexp.rb", "test/router/test_utils.rb", "test/test_route.rb", "test/test_router.rb", "test/test_routes.rb"]
+  s.rubyforge_project = "journey"
+  s.rubygems_version = "1.8.24"
+  s.summary = "Journey is a router"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

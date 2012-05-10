@@ -1,19 +1,21 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{vegas}
+  s.name = "vegas"
   s.version = "0.1.11"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Aaron Quint"]
-  s.date = %q{2009-08-30 00:00:00.000000000Z}
-  s.description = %q{Vegas aims to solve the simple problem of creating executable versions of Sinatra/Rack apps. It includes a class Vegas::Runner that wraps Rack/Sinatra applications and provides a simple command line interface and launching mechanism.}
+  s.date = "2009-08-30"
+  s.description = "Vegas aims to solve the simple problem of creating executable versions of Sinatra/Rack apps. It includes a class Vegas::Runner that wraps Rack/Sinatra applications and provides a simple command line interface and launching mechanism."
   s.email = ["aaron@quirkey.com"]
-  s.homepage = %q{http://code.quirkey.com/vegas}
+  s.extra_rdoc_files = ["LICENSE", "README.rdoc"]
+  s.files = ["LICENSE", "README.rdoc"]
+  s.homepage = "http://code.quirkey.com/vegas"
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{quirkey}
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Vegas aims to solve the simple problem of creating executable versions of Sinatra/Rack apps.}
+  s.rubyforge_project = "quirkey"
+  s.rubygems_version = "1.8.24"
+  s.summary = "Vegas aims to solve the simple problem of creating executable versions of Sinatra/Rack apps."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

@@ -1,27 +1,24 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{unicorn}
+  s.name = "unicorn"
   s.version = "3.7.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Unicorn hackers"]
-  s.date = %q{2011-06-09}
-  s.description = %q{\Unicorn is an HTTP server for Rack applications designed to only serve
-fast clients on low-latency, high-bandwidth connections and take
-advantage of features in Unix/Unix-like kernels.  Slow clients should
-only be served by placing a reverse proxy capable of fully buffering
-both the the request and response in between \Unicorn and slow clients.}
-  s.email = %q{mongrel-unicorn@rubyforge.org}
+  s.date = "2011-06-09"
+  s.description = "\\Unicorn is an HTTP server for Rack applications designed to only serve\nfast clients on low-latency, high-bandwidth connections and take\nadvantage of features in Unix/Unix-like kernels.  Slow clients should\nonly be served by placing a reverse proxy capable of fully buffering\nboth the the request and response in between \\Unicorn and slow clients."
+  s.email = "mongrel-unicorn@rubyforge.org"
   s.executables = ["unicorn", "unicorn_rails"]
   s.extensions = ["ext/unicorn_http/extconf.rb"]
-  s.files = ["test/unit/test_configurator.rb", "test/unit/test_http_parser.rb", "test/unit/test_http_parser_ng.rb", "test/unit/test_http_parser_xftrust.rb", "test/unit/test_request.rb", "test/unit/test_response.rb", "test/unit/test_server.rb", "test/unit/test_util.rb", "bin/unicorn", "bin/unicorn_rails", "ext/unicorn_http/extconf.rb"]
-  s.homepage = %q{http://unicorn.bogomips.org/}
+  s.extra_rdoc_files = ["FAQ", "README", "TUNING", "PHILOSOPHY", "HACKING", "DESIGN", "CONTRIBUTORS", "LICENSE", "SIGNALS", "KNOWN_ISSUES", "TODO", "NEWS", "ChangeLog", "LATEST", "lib/unicorn.rb", "lib/unicorn/app/exec_cgi.rb", "lib/unicorn/app/inetd.rb", "lib/unicorn/app/old_rails.rb", "lib/unicorn/app/old_rails/static.rb", "lib/unicorn/cgi_wrapper.rb", "lib/unicorn/configurator.rb", "lib/unicorn/const.rb", "lib/unicorn/http_request.rb", "lib/unicorn/http_response.rb", "lib/unicorn/http_server.rb", "lib/unicorn/launcher.rb", "lib/unicorn/oob_gc.rb", "lib/unicorn/preread_input.rb", "lib/unicorn/socket_helper.rb", "lib/unicorn/stream_input.rb", "lib/unicorn/tee_input.rb", "lib/unicorn/tmpio.rb", "lib/unicorn/util.rb", "lib/unicorn/worker.rb", "ISSUES", "Sandbox", "Links"]
+  s.files = ["bin/unicorn", "bin/unicorn_rails", "FAQ", "README", "TUNING", "PHILOSOPHY", "HACKING", "DESIGN", "CONTRIBUTORS", "LICENSE", "SIGNALS", "KNOWN_ISSUES", "TODO", "NEWS", "ChangeLog", "LATEST", "lib/unicorn.rb", "lib/unicorn/app/exec_cgi.rb", "lib/unicorn/app/inetd.rb", "lib/unicorn/app/old_rails.rb", "lib/unicorn/app/old_rails/static.rb", "lib/unicorn/cgi_wrapper.rb", "lib/unicorn/configurator.rb", "lib/unicorn/const.rb", "lib/unicorn/http_request.rb", "lib/unicorn/http_response.rb", "lib/unicorn/http_server.rb", "lib/unicorn/launcher.rb", "lib/unicorn/oob_gc.rb", "lib/unicorn/preread_input.rb", "lib/unicorn/socket_helper.rb", "lib/unicorn/stream_input.rb", "lib/unicorn/tee_input.rb", "lib/unicorn/tmpio.rb", "lib/unicorn/util.rb", "lib/unicorn/worker.rb", "ISSUES", "Sandbox", "Links", "ext/unicorn_http/extconf.rb"]
+  s.homepage = "http://unicorn.bogomips.org/"
+  s.rdoc_options = ["-t", "Unicorn: Rack HTTP server for fast clients and Unix", "-W", "http://bogomips.org/unicorn.git/tree/%s"]
   s.require_paths = ["lib"]
-  s.rubyforge_project = %q{mongrel}
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Rack HTTP server for fast clients and Unix}
-  s.test_files = ["test/unit/test_configurator.rb", "test/unit/test_http_parser.rb", "test/unit/test_http_parser_ng.rb", "test/unit/test_http_parser_xftrust.rb", "test/unit/test_request.rb", "test/unit/test_response.rb", "test/unit/test_server.rb", "test/unit/test_util.rb"]
+  s.rubyforge_project = "mongrel"
+  s.rubygems_version = "1.8.24"
+  s.summary = "Rack HTTP server for fast clients and Unix"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

@@ -1,34 +1,22 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{resque}
+  s.name = "resque"
   s.version = "1.20.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Chris Wanstrath", "Terence Lee"]
-  s.date = %q{2012-02-17}
-  s.description = %q{    Resque is a Redis-backed Ruby library for creating background jobs,
-    placing those jobs on multiple queues, and processing them later.
-
-    Background jobs can be any Ruby class or module that responds to
-    perform. Your existing classes can easily be converted to background
-    jobs or you can create new classes specifically to do work. Or, you
-    can do both.
-
-    Resque is heavily inspired by DelayedJob (which rocks) and is
-    comprised of three parts:
-
-    * A Ruby library for creating, querying, and processing jobs
-    * A Rake task for starting a worker which processes jobs
-    * A Sinatra app for monitoring queues, jobs, and workers.
-}
-  s.email = %q{chris@ozmm.org}
+  s.date = "2012-02-17"
+  s.description = "    Resque is a Redis-backed Ruby library for creating background jobs,\n    placing those jobs on multiple queues, and processing them later.\n\n    Background jobs can be any Ruby class or module that responds to\n    perform. Your existing classes can easily be converted to background\n    jobs or you can create new classes specifically to do work. Or, you\n    can do both.\n\n    Resque is heavily inspired by DelayedJob (which rocks) and is\n    comprised of three parts:\n\n    * A Ruby library for creating, querying, and processing jobs\n    * A Rake task for starting a worker which processes jobs\n    * A Sinatra app for monitoring queues, jobs, and workers.\n"
+  s.email = "chris@ozmm.org"
   s.executables = ["resque", "resque-web"]
-  s.files = ["bin/resque", "bin/resque-web"]
-  s.homepage = %q{http://github.com/defunkt/resque}
+  s.extra_rdoc_files = ["LICENSE", "README.markdown"]
+  s.files = ["bin/resque", "bin/resque-web", "LICENSE", "README.markdown"]
+  s.homepage = "http://github.com/defunkt/resque"
+  s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{Resque is a Redis-backed queueing system.}
+  s.rubygems_version = "1.8.24"
+  s.summary = "Resque is a Redis-backed queueing system."
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
