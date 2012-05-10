@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: git://github.com/synctree/capistrano-clouddeploy
-  revision: 4142e7428914dbfb3536222b2f7be634a2516d3e
+  revision: 80573107d27f104a59385170d7b13a65d511ba20
   specs:
     capistrano-clouddeploy (1.0.1)
       amazon-ec2
