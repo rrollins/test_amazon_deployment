@@ -38,7 +38,6 @@ gem 'rvm-capistrano' #, :require => 'rvm/capisrano'
 
 # To use debugger
 #
-gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'redis'
 
 gem 'sunspot_rails'
