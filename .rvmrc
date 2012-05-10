@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ruby_string="1.9.3"
+ruby_string="1.9.2"
 gem_set="review"
 
 
