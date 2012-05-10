@@ -64,7 +64,7 @@ group :production do
 end
 
 group :development, :test do
-  gem 'ruby-debug19'
+#  gem 'ruby-debug19'
   gem 'rspec-rails'
   gem 'rspec'
 end
